@@ -3,14 +3,11 @@
 set -e
 
 
-elif [ "$API_METHOD" -eq 2 ]; then
-  HTTP_RESPONSE=$(curl -sS "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache" \
+HTTP_RESPONSE=$(curl -sS "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache" \
                       -H "Content-Type: application/json" \
                       -H "Authorization: Bearer ${CLOUDFLARE_TOKEN}" \
                       -w "HTTP_STATUS:%{http_code}" \
                       "$@")
-fi
-
 
 ######## Format response for a pretty command line output. ########
 
