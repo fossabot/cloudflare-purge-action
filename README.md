@@ -34,6 +34,7 @@ API Tokens are [a new feature](https://blog.cloudflare.com/api-tokens-general-av
 Creating a token can be tricky, so here's what you should enter [on this page](https://dash.cloudflare.com/profile/api-tokens) to create a token for purging the cache of a single domain on your account:
 
 ![Creating an API Token for purging](tokens.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMCSeekeri%2Fcloudflare-purge-action.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMCSeekeri%2Fcloudflare-purge-action?ref=badge_shield)
 
 
 #### Option 2: Global API Key
@@ -85,3 +86,6 @@ PURGE_URLS: '["https://jarv.is/style.css", "https://jarv.is/favicon.ico"]'
 ## License
 
 This project is distributed under the [MIT license](LICENSE.md).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMCSeekeri%2Fcloudflare-purge-action.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FMCSeekeri%2Fcloudflare-purge-action?ref=badge_large)
